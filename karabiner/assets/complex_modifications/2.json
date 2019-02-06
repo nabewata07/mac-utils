@@ -7,7 +7,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "backslash"
+            "key_code": "backslash",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "conditions": [
             {
@@ -29,7 +34,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "delete_or_backspace"
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
           },
           "conditions": [
             {

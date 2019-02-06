@@ -96,31 +96,6 @@
                         ]
                     },
                     {
-                        "description": "Change shift + delete to forward delete (rev 2)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock",
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "control+[_to_esc",
                         "manipulators": [
                             {
@@ -159,7 +134,12 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "caps_lock"
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -183,7 +163,12 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "left_control"
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -212,7 +197,12 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "backslash"
+                                    "key_code": "backslash",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -236,7 +226,12 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "delete_or_backspace"
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
