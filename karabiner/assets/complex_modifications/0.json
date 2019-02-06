@@ -1,0 +1,54 @@
+{
+  "title": "switch caps_lock and control",
+  "rules": [
+    {
+      "description": "switch caps_lock and control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627,
+                  "description": "Apple Internal Keyboard",
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ],
+          "to": [
+            { "key_code": "left_control" }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627,
+                  "description": "Apple Internal Keyboard",
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ],
+          "to": [
+            { "key_code": "caps_lock" }
+          ]
+        }
+      ]
+    }
+  ]
+}

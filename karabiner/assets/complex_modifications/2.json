@@ -1,0 +1,54 @@
+{
+  "title": "switch_delete_and_backslash",
+  "rules": [
+    {
+      "description": "switch_delete_and_backslash",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "backslash"
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627,
+                  "description": "Apple Internal Keyboard",
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ],
+          "to": [
+            {"key_code": "delete_or_backspace"}
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_or_backspace"
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 627,
+                  "description": "Apple Internal Keyboard",
+                  "is_built_in_keyboard": true
+                }
+              ]
+            }
+          ],
+          "to": [
+            {"key_code": "backslash"}
+          ]
+        }
+      ]
+    }
+  ]
+}

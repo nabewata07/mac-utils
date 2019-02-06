@@ -14,7 +14,7 @@
   <item>
     <name>delete_to_backslash</name>
     <identifier>private.delete_backslash</identifier>
-    <device_only>DeveiceVendor::RawValue::0x05ac, DeviceProduct::RawValue::0x0290</device_only>
+    <device_only>DeveiceVendor::RawValue::0x05ac, DeviceProduct::RawValue::0x0273</device_only>
     <autogen>
       --KeyToKey--
       KeyCode::DELETE,
@@ -25,7 +25,7 @@
   <item>
     <name>backslash_to_delete</name>
     <identifier>private.backslash_delete</identifier>
-    <device_only>DeveiceVendor::RawValue::0x05ac, DeviceProduct::RawValue::0x0290</device_only>
+    <device_only>DeveiceVendor::RawValue::0x05ac, DeviceProduct::RawValue::0x0273</device_only>
     <autogen>
       --KeyToKey--
       KeyCode::BACKSLASH,

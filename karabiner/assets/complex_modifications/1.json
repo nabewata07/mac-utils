@@ -1,0 +1,22 @@
+{
+  "title": "control+[_to_esc",
+  "rules": [
+    {
+      "description": "control+[_to_esc",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [ "left_control" ]
+            }
+          },
+          "to": [
+            {"key_code": "escape"}
+          ]
+        }
+      ]
+    }
+  ]
+}
