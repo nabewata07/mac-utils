@@ -117,69 +117,6 @@
                         ]
                     },
                     {
-                        "description": "switch caps_lock and control",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "description": "Apple Internal Keyboard",
-                                                "is_built_in_keyboard": true,
-                                                "product_id": 627,
-                                                "vendor_id": 1452
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "description": "Apple Internal Keyboard",
-                                                "is_built_in_keyboard": true,
-                                                "product_id": 627,
-                                                "vendor_id": 1452
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "caps_lock"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "switch_delete_and_backslash",
                         "manipulators": [
                             {
@@ -188,8 +125,7 @@
                                         "identifiers": [
                                             {
                                                 "description": "Apple Internal Keyboard",
-                                                "is_built_in_keyboard": true,
-                                                "product_id": 627,
+                                                "is_keyboard": true,
                                                 "vendor_id": 1452
                                             }
                                         ],
@@ -217,8 +153,7 @@
                                         "identifiers": [
                                             {
                                                 "description": "Apple Internal Keyboard",
-                                                "is_built_in_keyboard": true,
-                                                "product_id": 627,
+                                                "is_keyboard": true,
                                                 "vendor_id": 1452
                                             }
                                         ],
@@ -236,6 +171,67 @@
                                 "to": [
                                     {
                                         "key_code": "backslash"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "switch caps_lock and control",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "description": "Apple Internal Keyboard",
+                                                "is_keyboard": true,
+                                                "vendor_id": 1452
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "description": "Apple Internal Keyboard",
+                                                "is_keyboard": true,
+                                                "vendor_id": 1452
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "caps_lock"
                                     }
                                 ],
                                 "type": "basic"
@@ -374,7 +370,9 @@
             "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
-                "country_code": 0
+                "caps_lock_delay_milliseconds": 0,
+                "country_code": 0,
+                "keyboard_type": "ansi"
             }
         }
     ]

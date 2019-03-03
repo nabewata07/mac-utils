@@ -20,9 +20,8 @@
               "identifiers": [
                 {
                   "vendor_id": 1452,
-                  "product_id": 627,
                   "description": "Apple Internal Keyboard",
-                  "is_built_in_keyboard": true
+                  "is_keyboard": true
                 }
               ]
             }
@@ -47,9 +46,8 @@
               "identifiers": [
                 {
                   "vendor_id": 1452,
-                  "product_id": 627,
                   "description": "Apple Internal Keyboard",
-                  "is_built_in_keyboard": true
+                  "is_keyboard": true
                 }
               ]
             }
