@@ -1,0 +1,39 @@
+{
+  "title": "kana-setting",
+  "rules": [
+    {
+      "description": "left_command_and_shift_is_eisuu",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [ "left_command" ]
+            }
+          },
+          "to": [
+            { "key_code": "japanese_eisuu" }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "right_command_and_shift_is_kana",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [ "right_command" ]
+            }
+          },
+          "to": [
+            { "key_code": "japanese_kana" }
+          ]
+        }
+      ]
+    }
+  ]
+}
